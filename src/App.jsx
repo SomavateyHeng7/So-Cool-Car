@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './pages/dashboard';
 import HighlightedCars from './pages/highlightedCar';
 import CarDetails from './pages/CarDetails';
@@ -12,7 +11,7 @@ import './assets/dashboard.css';
 const App = () => {
   return (
     <Router>
- 
+
       <Routes>
         <Route path="/" element={<Dashboard />} /> 
         <Route path="/dashboard" element={<Dashboard />} />
